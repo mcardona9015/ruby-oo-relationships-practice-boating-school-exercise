@@ -24,7 +24,7 @@ class Instructor
         student_test = nil
         BoatingTest.all.each do |test|
             if test.student == student and test.boating_test_name == test_name
-                test.boating_test_status == "passed"
+                test.boating_test_status = "passed"
                 student_test = test
             end
         end
